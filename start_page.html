@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KIO Kiosk</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_selector_tool" />
+        <link rel="stylesheet" href="start_page_detail.css" />
+    </head>
+    <body>
+        <div class="container">
+            <img src="image/logo_image.png" alt="KIO Logo" class="logo" />
+            <div class ="title fredoka-title">KIO</div>
+            <div class="circle" id="circle">
+                <div class="circle_bot"></div>
+                <div class="circle_top"></div>
+                <span class="material-symbols-outlined icon">arrow_selector_tool</span>
+            </div>
+            
+            <button class="start_button fredoka-title" id="startBtn">Touch to start!</button>
+        </div>
+        <script>
+         document.getElementById("circle").addEventListener("click", () => {
+            window.location.href = "main.html";
+        });
+        document.getElementById("startBtn").addEventListener("click", () => {
+            window.location.href = "main.html";
+        });
+        </script>
+
+        
+</html>
